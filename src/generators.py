@@ -4,10 +4,6 @@ import random
 # TODO allow user to craft their own rules
 
 # -------------------------------- #
-#        !!! USER INPUT !!!        #
-# -------------------------------- #
-user_input = -1  # this is just a placeholder for the loop to run at least once
-# -------------------------------- #
 #    LETTERS AND SYLLABLE RULES    #
 # -------------------------------- #
 # alphabet = "abcdefghijklmnopqrstuvwxyz"  # 26 letters
@@ -48,9 +44,9 @@ def generate_syllable():
 # ------------------------ #
 #      WORD GENERATOR      #
 # ------------------------ #
-def generate_word():
+def generate_word(number_of_syllables):
     word_list = []
-    for n in range(0, user_input):
+    for n in range(0, number_of_syllables):
         syllable = generate_syllable()
         word_list.append("".join(syllable))
     word = "".join(word_list)
@@ -58,27 +54,15 @@ def generate_word():
     return capitalized_word
 
 
-def run():
-    global user_input
-    while user_input <= 0:
-        # ------------------------------------  #
-        #      ASK THE AMOUNT OF SYLLABLES      #
-        # ------------------------------------  #
-        user_input = int(input("How many syllables do you want? : "))
-
+def run_generators(number_of_syllables):
     # ------------------------ #
-    #      OUTPUT RESULTS      #
+    #    OUTPUT 3 RESULTS      #
     # ------------------------ #
-    while user_input != 0:
-        for i in range(0, 3):
-            output = generate_word()
-            print(output)
-
-        # Go to the next iteration
-        input("---Next---")
-        os.system("cls")
-    else:
-        print("ENDED")
+    output = ""
+    for i in range(0, 3):
+        word = generate_word(number_of_syllables)
+        output += word + "\n"
+    return output
 
 
-run()
+

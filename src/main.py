@@ -1,13 +1,11 @@
 from gui import *
-from app import syl
+from generators import run_generators
 
 while True:
     event, values = window.read()
 
     if event is None:
         break
-
-    print(event, values)
 
     if event == "-GENERATE-":
         selected_number = None
@@ -19,6 +17,9 @@ while True:
             if button_value is True:
                 selected_number = button
 
-        print(selected_number)
+        # Return Output from generator
+        output = run_generators(selected_number)
+        window["-RESULT-"].update(output)
+        window.refresh()
 
 window.close()
