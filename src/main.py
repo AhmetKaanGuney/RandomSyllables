@@ -1,3 +1,4 @@
+from gui import *
 import random
 import os
 # TODO allow user to craft their own rules
@@ -42,7 +43,7 @@ def generate_random_syllable():
 # ------------------------------------  #
 #      ASK THE AMOUNT OF SYLLABLES      #
 # ------------------------------------  #
-user_input = -1  # this is just a placeholder
+user_input = -1  # this is just a placeholder for the loop to run at least once
 while user_input <= 0:
     user_input = int(input("How many syllables do you want? : "))
 
