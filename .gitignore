@@ -1,8 +1,7 @@
-src/logs
+src/__pycache__
 .idea/
 EXE/
 build/
 dist/
 venv/
 requirements.txt
-src/__pycache__
