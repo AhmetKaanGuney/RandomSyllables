@@ -14,7 +14,7 @@ rule0 = "vc"
 rule1 = "vcv"
 rule2 = "cv"
 rule3 = "cvc"
-syllable_rules = [rule0, rule1, rule3]  # 5 items (0-4)
+syllable_rules = [rule0, rule1, rule2, rule3]  # 5 items (0-4)
 
 # ------------------------ #
 #      RANDOM VALUES       #
