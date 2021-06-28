@@ -1,5 +1,5 @@
 # RandomSyllables
-![GitHub Logo](src/resources/logo.png)
+![GitHub Logo](/screenshot.png)
 
 Create random words from randomly chosen syllables!
 
