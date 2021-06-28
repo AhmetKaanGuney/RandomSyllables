@@ -19,4 +19,7 @@ The **generate_syllable()** function picks random vowels or consonants
 from their own lists. Then passes them to the **generate_word()** function.
 Which joins all the syllables together and returns a word.
 
+*Notes:*
+
+*Python version == 3.9.4*
 
