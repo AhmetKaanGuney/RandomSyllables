@@ -1,4 +1,3 @@
-import os
 import random
 
 # TODO allow user to craft their own rules
